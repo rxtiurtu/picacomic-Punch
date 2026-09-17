@@ -2,18 +2,17 @@ name: picacgPunch
 
 on:
 
+
   push:
-    branches: [ main ]    
+    branches: [ main ]
     paths:
-    - '.github/workflows/**'
-    - '!/.gitignore'
-    - '!README.md'
-  
-    
-    
+      - '.github/workflows/**'
+      - '!/.gitignore'
+      - '!README.md'
   schedule:
     - cron: '2 2 * * *'
-    workflow_dispatch:
+  workflow_dispatch:
+
 
 jobs:
 
