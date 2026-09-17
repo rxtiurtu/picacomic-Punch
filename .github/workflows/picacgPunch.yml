@@ -5,14 +5,15 @@ on:
   push:
     branches: [ main ]    
     paths:
-    - '**'
-    - '!.gitignore'
+    - '.github/workflows/**'
+    - '!/.gitignore'
     - '!README.md'
   
     
     
   schedule:
     - cron: '2 2 * * *'
+    workflow_dispatch:
 
 jobs:
 
